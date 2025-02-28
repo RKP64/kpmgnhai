@@ -70,7 +70,7 @@ max_context_length = st.sidebar.number_input("Max Context Length (tokens):", 100
 retrieve_mode = st.sidebar.selectbox("Retrieve Mode:", ["Text (Hybrid)", "Vector Only", "Text Only"])
 # Toggle for document chunking (vector store creation)
 enable_chunking = st.sidebar.checkbox(
-    "Enable document chunking for Document Q&A (incurs embedding cost)", value=True
+    "Enable other AI features", value=True
 )
 
 #########################################
