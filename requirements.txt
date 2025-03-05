@@ -65,7 +65,8 @@ packaging
 pandas                    
 pillow                    
 pip                     
-propcache                                
+propcache                 
+protobuf                  
 pyarrow                   
 pydantic                  
 pydantic_core             
@@ -111,7 +112,7 @@ typing-inspect
 tzdata                    
 urllib3                   
 watchdog                  
-yarl  
+yarl                   
 pandas
 xlsxwriter
 fpdf
