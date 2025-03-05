@@ -65,8 +65,7 @@ packaging
 pandas                    
 pillow                    
 pip                     
-propcache                 
-protobuf=3.20                  
+propcache                                
 pyarrow                   
 pydantic                  
 pydantic_core             
