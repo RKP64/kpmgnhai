@@ -117,3 +117,6 @@ pandas
 xlsxwriter
 fpdf
 pymupdf
+streamlit
+protobuf==3.20.*
+
