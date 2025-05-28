@@ -20,3 +20,4 @@ openai==1.82.0
 langchain-openai      # Let pip attempt to find a compatible version
 langchain-groq==0.3.2
 faiss-cpu==1.11.0     # Or faiss-gpu if you have a compatible GPU setup
+excelwriter
