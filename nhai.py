@@ -305,7 +305,14 @@ def generate_pdf(conversation_history):
         pdf.ln(5)
         pdf.multi_cell(0, 10, f"A: {r}")
         pdf.ln(10)
-    return io.BytesIO(pdf.output(dest="S").encode("latin-1"))
+    output = pdf.output(dest="S")  # Get the output from FPDF
+    if isinstance(output, str):
+        # If it's a string (from very old fpdf), encode it to latin-1
+        output_bytes = output.encode('latin-1', 'replace')
+    else:
+        # If it's already bytes (from fpdf2), use it directly
+        output_bytes = output
+    return io.BytesIO(output_bytes)
 
 def generate_excel_from_df(df: pd.DataFrame):
     if df.empty:
